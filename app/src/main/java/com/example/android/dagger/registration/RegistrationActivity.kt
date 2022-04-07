@@ -35,7 +35,7 @@ class RegistrationActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
 
 
-        (application as MyApplication).appComponent.injection(this)
+        (application as MyApplication).appComponent.registrationComponent().create().inject(this)
 
         super.onCreate(savedInstanceState)
 
